@@ -38,3 +38,25 @@ for i in range(5):
 print('^'*20)
 for i in range(5):
     print(i)
+
+
+
+#字母D
+for m in range(4):
+    for n in range(3):
+        if n==0:
+            print('*',end=" ")
+        elif m==0 or m==3:
+            if n==2:
+                break
+            else:
+                print('$'," ")
+        elif n==2:
+            if m==0 or m==3:
+                break
+            else:
+                print('@',end=" ")
+        else:
+            print(' ',end=" ")
+    print()
+
