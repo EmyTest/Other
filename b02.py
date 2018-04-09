@@ -23,6 +23,7 @@ for i in range(5):
     print()
 print("-"*20)
 
+
 for i in range(5):
     # for k in range():
     for j in range(0,5-i):
