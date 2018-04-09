@@ -17,6 +17,7 @@ from __future__ import print_function
 for i in range(5):
     for j in range(0,5-i):
         print(end="*")
+    #控制列，第一行一列，第二行两列
     for k in range(6-i,6):
         print('o',end=" ")
     print()
