@@ -14,49 +14,87 @@ from __future__ import print_function
 #         else:
 #             print(' ',end=" ")
 #     print()
-for i in range(5):
-    for j in range(0,5-i):
-        print(end="*")
-    #控制列，第一行一列，第二行两列
-    for k in range(6-i,6):
-        print('o',end=" ")
-    print()
-print("-"*20)
+# for i in range(5):
+#     for j in range(0,5-i):
+#         print(end="*")
+#     #控制列，第一行一列，第二行两列
+#     for k in range(6-i,6):
+#         print('o',end=" ")
+#     print()
+# print("-"*20)
+#
+#
+# for i in range(5):
+#     # for k in range():
+#     for j in range(0,5-i):
+#         print(end=" ")
+#     for k in range(5-i,6):
+#         if i==0 or k==5-i or i==4 or k==5:
+#             print('*',end =" ")
+#         else:
+#             print(' ',end=" ")
+#     print()
+#
+# print('^'*20)
+# for i in range(5):
+#     print(i)
+#
+#
+#
+# #字母D
+# for m in range(4):
+#     for n in range(3):
+#         if n==0:
+#             print('*',end=" ")
+#         elif m==0 or m==3:
+#             if n==2:
+#                 break
+#             else:
+#                 print('$'," ")
+#         elif n==2:
+#             if m==0 or m==3:
+#                 break
+#             else:
+#                 print('@',end=" ")
+#         else:
+#             print(' ',end=" ")
+#     print()
 
 
-for i in range(5):
-    # for k in range():
-    for j in range(0,5-i):
-        print(end=" ")
-    for k in range(5-i,6):
-        if i==0 or k==5-i or i==4 or k==5:
-            print('*',end =" ")
-        else:
-            print(' ',end=" ")
-    print()
+# #字母p
+# for m in range(1,7):
+#     for n in range(1,4):
+#         if n==1:
+#             print('*',end=" ")
+#         elif m==1 or m==4:
+#             if n>2:
+#                 break
+#             else:
+#                 print('#',end=" ")
+#         elif n>2:
+#             if m==2 or m==3:
+#                 print('&',end=" ")
+#         else:
+#             print(' ',end=" ")
+#     print(" ")
 
-print('^'*20)
-for i in range(5):
-    print(i)
-
-
-
-#字母D
-for m in range(4):
-    for n in range(3):
-        if n==0:
-            print('*',end=" ")
-        elif m==0 or m==3:
-            if n==2:
-                break
-            else:
-                print('$'," ")
-        elif n==2:
-            if m==0 or m==3:
-                break
-            else:
-                print('@',end=" ")
-        else:
-            print(' ',end=" ")
-    print()
+# R
+# for m in range(5):
+#     for n in range(4):
+#         if n==0:
+#             print('*',end=" ")
+#         elif m==0 or m==3:
+#             if n==2:
+#                 break
+#             else:
+#                 print('#',end=" ")
+#         elif n==2:
+#             if m==0 or m==3:
+#                 break
+#             else:
+#                 print('@',end=" ")
+#         else:
+#             print('-',end=" ")
+#
+#     print(" ")
 
