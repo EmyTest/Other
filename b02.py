@@ -90,6 +90,7 @@ from __future__ import print_function
 #                 print('#',end=" ")
 #         elif n==2:
 #             if m==0 or m==3:
+
 #                 break
 #             else:
 #                 print('@',end=" ")
@@ -97,4 +98,38 @@ from __future__ import print_function
 #             print('-',end=" ")
 #
 #     print(" ")
+
+#######################################################################################
+#类似栈先进后出的关系
+# #要有递推关系 要有临界值
+# def digui(num):
+#     print('$'+str(num))
+#     if num >0:
+#         #调用本身的函数
+#         digui(num-1)
+#     else:
+#         print('='*20)
+#     print(num)
+# digui(1)
+
+
+#LEGB
+# tt = "1"
+# def test1():
+#     tt ="2"
+#     print("test1 函数的局部变量tt{}".format(id(tt)))
+#
+#     def test2():
+#         global tt
+#         tt = "3"
+#         print("全局变量tt{}".format(id(tt)))
+#     test2()
+#     print(tt)
+#
+# print('$'+tt)
+# test1()
+# print('*'+tt)
+# print("全局变量tt{}".format(id(tt)))
+
+
 
