@@ -131,5 +131,55 @@ from __future__ import print_function
 # print('*'+tt)
 # print("全局变量tt{}".format(id(tt)))
 
+#
+#
+# import os
+# path = r'd:\listdir'
+# for filename in os.listdir(path):
+#     #目录的路径和文件名拼接起来，得到了文件的绝路路径
+#     print(os.path.join(path,filename))
+import os
+def getdirpath(dirpath):
+    total = 0
+    allname = os.listdir(dirpath)
+    for name in allname:
+        fullpath = os.path.join(dirpath,name)
+        if os.path.isfile(fullpath):
+            total += os.path.getsize(fullpath)
+        elif os.path.isdir(fullpath):
+            total += getdirpath(fullpath)
+    return total
+size = getdirpath('F:\__MACOSX')
+print(size)
+
+
+
+
+###数据类型的内置函数
+####number 数值型 （int float  bool   complex     string 字符型       tuple 元组        list 列表         dictionary 字典   set集合
+
+#####字符串的简单操作
+str1='lo'
+str2='ve'
+print(str1+str2)
+print('lo'+'ve')
+
+print('#'*10)
+
+s='ilove python'
+print(s[-1])
+
+#切片 包含开始不包含结尾
+print(s[1:5])
+
+#help(str)
+#capitalize() 首字母大写 返回字符串
+s = 'i like python'
+print(s.capitalize())
+
+
+
+
+
 
 
