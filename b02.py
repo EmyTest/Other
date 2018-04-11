@@ -430,6 +430,25 @@ Error: byte数字（单字节）
 # print(a)
 
 #discard() 删除集合中的某个值，如果这个值不在集合中，什么也不做
-a={'a','c','f','r'}
-a.discard(4)
-print(a)
+# a={'a','c','f','r'}
+# a.discard(4)
+# print(a)
+
+
+#difference() 差集
+#difference_update() 区别：第一个返回新的集合，第二个把原来的集合覆盖
+
+set1={1,2,3,4,7}
+set2={2,4,8,111,24}
+# set3=set1.difference(set2)
+set4=set2.difference_update(set1)
+# print(set3)
+print(set4)
+
+
+
+
+
+
+
+
