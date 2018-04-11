@@ -312,3 +312,124 @@ Error: byte数字（单字节）
 #index() 获取值在列表中的索引
 # list1 = [1,2,3,4,5]
 # print(list1.index(3))
+
+
+#insert() 在指定位置前插入元素   2个参数
+# list1 = [1,2,3,4,5]
+# list1.insert(2,8)
+# print(list1)
+
+
+
+#pop() 根据索引移除列表内一个元素，不给索引默认移除最后一个
+# list1=[1,2,3,4,5]
+# list1.pop(1)
+# print(list1)
+#pop() 根据字典中指定的元素 返回键所对应的值
+# dict1={'a':1,'b':2,'c':3}
+# print(dict1.pop('b'))
+# print(dict1.pop('d',4))
+
+
+
+# a={'a','b','g',5}
+# a.pop()
+# print(a)
+
+#popitem()移除字典的键值对 返回移除的键和值
+# dict1={'d':4,'a':1,'b':2,'c':3}
+# print(dict1.popitem())
+
+
+#remove() 移除列表指定的值
+# list1=['a','b','c','d']
+# list1.remove('b')
+# print(list1)
+
+#reverse() 列表反转
+# list1 = [1,2,3,4]
+# print(list1.reverse())
+#
+# list1=[1,2,3,4]
+# list2=list(reversed(list1))
+# print(list2)
+
+
+
+# a=[1,2,3,4,5,6,7,8,9]
+# b=list(reversed(a))
+# print (b)
+
+
+
+#sort() 排序 默认从小到大
+# list1=[5,2,4,6,1,9
+
+
+#clear() 清除整个字典 返回none
+# dict1={'a':1,'b':2,'c':3}
+# dict1.clear()
+# print(dict1)
+
+
+#fromkeys() 按照指定的序列为键创建字典，值都一样的
+# list1 = ['a','b','c']
+# dict1={}.fromkeys(list1)
+# dict2={}.fromkeys(list1,3)
+# print(dict1,dict2)
+# print(dict2)
+
+
+#get 根据键获取指定的值 找不到的键 如果设默认值则返回默认值  没有设默认值 返回none
+# dict1={'a':1,'b':2,'c':3}
+# print(dict1.get('b'))
+# print(dict1.get('d'))
+# print(dict1.get('d',4))
+
+
+#items（）将字典变成类似于元组的形式方便遍历
+# dict1={'a':1,'b':2,'c':3}
+# for k ,v in dict1.items():
+#     print(k,v)
+# print(dict1.items())
+
+#keys() 遍历字典中的键
+#values（）遍历字典中的值
+
+#setdefault() 在字典里添加一个元素
+# dict1={'d':4,'a':1,'b':2,'c':3}
+# print(dict1.setdefault('e',5))
+# print(dict1)
+
+#update() 修改字典中的值
+# dict1={'d':4,'a':1,'b':2,'c':3}
+# dict1.update({'a':4,'c':9,'f':1})
+# print(dict1)
+
+# #集合
+# a=set()
+#
+# list1=[1,2,3,4]
+# a=set(list1)
+# print(a)
+
+
+#add()向集合添加元素
+# set={3,4,5,6,7}
+# set.add(0)
+# print(set)
+
+
+#clear() 清空集合
+#copy()复制集合
+
+#remove()删除集合中的某个值，如果这个值不在集合中，会报错
+# a={'a','c','f','r'}
+# a.remove('a')
+# a.remove(5)
+# print(a)
+
+#discard() 删除集合中的某个值，如果这个值不在集合中，什么也不做
+a={'a','c','f','r'}
+a.discard(4)
+print(a)
