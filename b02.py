@@ -438,17 +438,91 @@ Error: byte数字（单字节）
 #difference() 差集
 #difference_update() 区别：第一个返回新的集合，第二个把原来的集合覆盖
 
-set1={1,2,3,4,7}
-set2={2,4,8,111,24}
-# set3=set1.difference(set2)
-set4=set2.difference_update(set1)
-# print(set3)
-print(set4)
+# set1={1,2,3,4,7}
+# set2={2,4,8,111,24}
+# # set3=set1.difference(set2)
+# set4=set2.difference_update(set1)
+# # print(set3)
+# print(set4)
+
+import math
+#print(math)
+#ceil()向上取整操作
+# print(math.ceil(5.1))
+
+#floor() 向下取整操作
+# print(math.floor(5.999))
+
+#查看系统保留的关键字，不可以用来当作变量的命名
+# import keyword
+# print(keyword.kwlist)
+
+#round() 四舍五入的操作
+# print(round(4.4))
+
+#sqrt()
+# print(math.sqrt(3))
+
+#pow() 与幂计算差不多，计算一个数的几次方
+# print(math.pow(100,100))
+
+
+# print(4**3)
+
+
+#fabs() 对一个数值获取他的绝对值
+# print(math.fabs(-1))
+
+#获取绝对值的操作  不是数学模块的 是python内置函数 返回值由本身类型而定
+# print(abs(-1))
 
 
 
+# fsum() 对整个序列求和
+# print(math.fsum([1,3,5,7,9]))
+#sum() python的内置函数
+# print(sum([2,3,44,55]))
+
+#math.modf()  将一个浮点数拆分为整数部分和小数部分
+# print(math.modf(2.33))
+# print(math.modf(0))
+# print(math.modf(2.0))
+# help(math.modf)
 
 
 
+# copysign() 将第二个数的符号（正负号）传给第一个数   返回第一个数值的浮点数
+# print(math.copysign(2,-3))
+
+# print(math.e)
+# print(math.pi)
+
+
+import  random
+# #random() 获取0~1之间的随机小数
+# for i in range (10):
+# #     # print(random.random())
+# #     print(random.randint(1,9))
+#
+#  #random.randrange() 获取指定开始和结束之间的值，可以指定间隔值
+#
+#     print(random.randrange(1,9,3))
+#
+#
+#     # for n in random.randrange
+
+#choice() 随机获取列表中的值
+# for i in range (10):
+
+# print(random.choice([1,5,369,55]))
+#shuffle() 随机打乱序列
+# list1=[1,3,5,3,5]
+# print(random.shuffle(list1))
+# print(list1)
+
+
+#uniform() 随机获取指定范围内的值 包括小数
+# for i in range(1,2):
+#     print(random.uniform(1,4))
 
 
