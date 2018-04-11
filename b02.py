@@ -178,16 +178,16 @@ from __future__ import print_function
 # print(s.capitalize())
 
 #title()将每个单词首字母大写
-s = 'l love python'
-print(s.title())
-
-#upper()将所有字母变为大写
-
-
-#lower（）所有字母小写
-#swapcase（） 大小写互换
-s = 'l l LLL'
-print(s.swapcase())
+# s = 'l love python'
+# print(s.title())
+#
+# #upper()将所有字母变为大写
+#
+#
+# #lower（）所有字母小写
+# #swapcase（） 大小写互换
+# s = 'l l LLL'
+# print(s.swapcase())
 #len()计算字符串长度，不属于字符串的内建函数
 ##find（） 查找指定字符串，找不到返回 -1,找到返回索引值
 # ##index（）查找指定字符串，找不到报错
@@ -202,11 +202,113 @@ print(s.swapcase())
 # print(s.count('m'))
 
 #startswith() 检测是否有有制定的字母开头，返回布尔值
-#endswith（） 检测是否以制定的字母结束
-s='I an a baby '
-print(s.startswith('I'))
-print(s.endswith(' '))
+# #endswith（） 检测是否以制定的字母结束
+# s='I an a baby '
+# print(s.startswith('I'))
+# print(s.endswith(' '))
+
+#isspace 检测字符串是否是空字符串
+# s='    '
+# s1=' i am   '
+# print(s.isspace())
+# print(s1.isspace())
+
+# isalum() 检测字符串是否有字母加数字组成 返回布尔值
+# ##如果 string 至少有一个字符并且所有字符都是字母或数字则返回 True,否则返回 False
+# s = 'mmmmqqq2  3333 rrr'
+# s1 = 'skkkkk'
+# print(s.isalnum())
+# print(s1.isalnum())
+
+
+'''
+isdigit()
+True: Unicode数字，byte数字（单字节），全角数字（双字节）
+False: 汉字数字，罗马数字,小数
+Error: 无 
+
+isdecimal() 
+True: Unicode数字，全角数字（双字节） 
+False: 罗马数字，汉字数字,小数
+Error: byte数字（单字节） 
+isnumeric() 
+True: Unicode数字，全角数字（双字节），罗马数字，汉字数字 
+False: 小数 
+Error: byte数字（单字节）
+'''
+
+# s = '123.0'
+
+#split()用指定的字符切割字符串，返回由字符串组成的列表
+# s = '日照香炉生紫烟#疑是银河落九天#飞流直下三千尺'
+# list1 = s.split('#')
+# print(list1)
+
+# #splitlines() 以换行切割字符串
+# s='''日照香炉\n生紫烟\n疑是银河\n落九天\n飞流直下\n三千尺'''
+# print ( s.splitlines())
+
+#join() 将列表按照指定字符串连接 返回的是字符串
+# list1 = ['日照香炉生紫烟','疑是银河落九天','飞流直下三千尺']
+# s= '*'.join(list1)
+# print(s)
+#
+# ##ljust() 指定字符串长度，内容靠左，不足的地方用指定字符填充
+# s='abc'
+# print(len(s))
+# print(s.ljust(5,'$'))
+
+
+#strip() 去掉左右两边指定的字符，默认是去掉空格
+#lstrip（）去掉左侧指定的字符，默认是去掉空格
+#rstrip（）去掉右侧指定的字符，默认是去掉空格
+# s = '     zxcv     '
+# print('---'+s.strip()+'---')
+# print('---'+s.lstrip()+'---')
+#
+# print('---'+s.rstrip()+'---')
+
+#zfill() 指定字符串长度 内容靠右 不足的位置用0填充
+# s='abc'
+# print(s.zfill(6))
+
+
+#maketrans()生产用于字符串替换的映射表
+# #tarnslate()进行字符串替换
+# s='我今天吃了米饭'
+# table = s.maketrans('吃了米饭','喝了牛奶')
+# print(table)
+# print(s.translate(table))
 
 
 
+#append 向列表末尾添加新元素   返回none
 
+# list1=[1,2,3,4,5]
+# list1.append(5)
+# print(list1)
+
+
+# #copy()
+# list1=[1,2,3,4,5]
+# list2=list1.copy()
+# print(list2)
+
+
+#count（）计算某个元素在列表中出现的次数
+# list1=[1,1,2,5,1,3]
+# print(list1.count(1))
+
+
+#extend()将一个列表继承另一个列表
+# list1=[1,2,3,4,5]
+# list2=[6,7,8,9,10]
+# list3=list1.extend(list2)
+# print(list1)
+# print(list2)
+# print(list3)
+
+
+#index() 获取值在列表中的索引
+# list1 = [1,2,3,4,5]
+# print(list1.index(3))
