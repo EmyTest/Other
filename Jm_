@@ -43,3 +43,18 @@ select * from user where
  mangodb数据库性能
  支持自定义java组开发
  
+ 
+ 
+ 
+ 
+ #######
+【乱码】
+ 后置处理器 - BeanSjell PostProcessor
+ prev.setDataEncoding("utf-8")
+ 
+ 
+ 
+ 
+ 
+ 
+ 
