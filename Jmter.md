@@ -105,3 +105,13 @@ select * from user where
  响应断言 执行结果：
 
    -如果接口响应数据可以与断言匹配上，则测试用例通过，否则不通过。可以通过断言结果，查看断言执行情况。
+   
+   
+ ##BeanShell断言：
+ String data = SampleResult.getResponseDataAsString();
+if (data.indexOf("\"success\":true") != -1 || data.indexOf("\"Code\":200") != -1) {
+    SampleResult.setSuccessful(true); 
+}
+else {
+    SampleResult.setSuccessful(false); 
+}
