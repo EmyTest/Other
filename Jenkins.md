@@ -38,3 +38,10 @@ https://www.cnblogs.com/caoj/p/7815820.html
 
 
 http://www.cnblogs.com/zz0412/p/jenkins_jj_01.html
+
+
+
+
+
+
+C:\Users\Administrator\.jenkins
