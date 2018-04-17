@@ -115,3 +115,16 @@ if (data.indexOf("\"success\":true") != -1 || data.indexOf("\"Code\":200") != -1
 else {
     SampleResult.setSuccessful(false); 
 }
+
+
+
+
+0417：
+根据部分业务
+关于注册获取验证码的坑：
+1、按照教程来设置JDBC Connection Configuration 时： 写数据库url 多加了一个空格 导致花费了大量时间修改
+2、随机邮箱生成，可以用 randonstring 来做参数化   注意邮箱的写法 后面直接+ @qq.com 等等
+3、部分接口的调试： 报错 可能是因为 上一个接口的返回值有调整，导致 设置参数的时候 ，正则表达式需要跟着变化
+4、get、post等请求  不要弄错
+5、注意JDBC Request  值的获取  如 查询： select message from t_message_log where phone= '${target}' order by updated_at desc limit 1
+
