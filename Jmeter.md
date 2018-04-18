@@ -128,3 +128,27 @@ else {
 4、get、post等请求  不要弄错
 5、注意JDBC Request  值的获取  如 查询： select message from t_message_log where phone= '${target}' order by updated_at desc limit 1
 
+
+
+jmeter    问题描述：我的一系列接口测试里面 涉及到多个账号登录的问题  就需要用到头部的登录token    比如 1、a账号登录   2、a账号发单    3、b账号也登录  4、b账号用步骤3的登录token 和其他的参数 传值       接单    此时我的线程组 http信息头管理器里面是a的token   b的token不知道怎么传  是设两个线程组（似乎一个线程组只能有一个头部管理器的token）   然后跨线程组   取其他的参数     还是    就用一个线程组  把第二个账号的token参数化    参数化传值的话   和其他参数一起传在body里面  好像不对
+
+
+中间的解决方法：
+（线程组一）
+1、a登录
+2、a发单 ：添加正则表达式提取器获取orderid（线程组2里面会用到）-->  添加 beanshellpostprocessor 【填写 parameters ：${orderId}      script：String orderid=bsh.args[0];
+print (orderId)
+${__setProperty(orderIdNew,${orderId},true)}   】
+
+线程组二：
+3、b登录
+4、b接单 b的传参  （a里面的参数：targetId   ： ${__property(orderIdNew,,true)}）
+
+注意：
+勾选【测试计划】里面 “独立运行每个线程组”
+或：
+第一个线程组用  ：setup thread group
+
+待解决疑问点：setup thread group   和  线程组的详细不同点
+
+之后51test给出的解决参考：https://c.m.163.com/news/a/DEFA4S5K0511G03U.html?spss=newsapp&spsw=1
