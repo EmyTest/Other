@@ -181,4 +181,5 @@ BeanShell PreProcessor
 注意 如果在JDBC request的查询中使用参数   是正则表达式里面的${参数名}  
 注意  在正则表达式下对应添加BeanShell PerProcessor和BeanShell PostProcessor  
 
-
+详解JMeter函数和变量；函数助手对话框：  
+   https://www.cnblogs.com/MasterMonkInTemple/p/3442770.html  
