@@ -167,4 +167,14 @@ BeanShell PreProcessor
    vars.put("orderIdd",orderIdd);
 接口b传值：  ${orderIdd}
  
+##jmeter连接数据库：
+添加：JDBC Connection Configuration
+添加：查看结果树
 
+添加：JDBC request
+添加：查看结果树
+
+注意两者的参数名称一致
+注意JDBC Driver class 是可选项
+注意 如果在JDBC request的查询中使用参数   是正则表达式里面的${参数名}
+注意  在正则表达式下对应添加BeanShell PerProcessor和BeanShell PostProcessor
