@@ -152,4 +152,9 @@ ${__setProperty(orderIdNew,${orderId},true)}   】
 待解决疑问点：setup thread group   和  线程组的详细不同点
 
 之后51test给出的解决参考：https://c.m.163.com/news/a/DEFA4S5K0511G03U.html?spss=newsapp&spsw=1
-【BeanShellPreProcessor】和 beanshellpostprocessor的不同点：不用正则表达式、再参数化  直接一步取参数（写代码）
+【BeanShellPreProcessor】和 beanshellpostprocessor的不同点：
+
+![图一][http//wx2.sinaimg.cn/thumb150/b278a87fgy1fqhqr4tgecj20u80e0taf.jpg]
+
+![图二][http//wx4.sinaimg.cn/thumb150/b278a87fgy1fqhqr4j1mwj20rz0edgly.jpg]
+
