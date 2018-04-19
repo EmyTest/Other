@@ -153,9 +153,18 @@ ${__setProperty(orderIdNew,${orderId},true)}   】
 
 之后51test给出的解决参考：https://c.m.163.com/news/a/DEFA4S5K0511G03U.html?spss=newsapp&spsw=1
 【BeanShellPreProcessor】和 beanshellpostprocessor的不同点：
-
-![图一](https://wx2.sinaimg.cn/thumb150/419a6fb9gy1fqhr3anr48j20rz0edgly.jpg)
-
-![图二](https://wx4.sinaimg.cn/thumb150/b278a87fgy1fqhqr4j1mwj20rz0edgly.jpg)
-
+BeanShell PostProcessor:
+名称：orderIdd
+参数：${orderId}  （即正则表达式里面的）
+scripts：
+   String orderId=bsh.args[0];
+   print (orderId);
+   props.put("orderIdd",orderId);
+   
+BeanShell PreProcessor
+   String orderIdd = props.get("orderIdd");
+   log.info(orderIdd);
+   vars.put("orderIdd",orderIdd);
+接口b传值：  ${orderIdd}
+ 
 
