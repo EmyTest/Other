@@ -154,8 +154,8 @@ ${__setProperty(orderIdNew,${orderId},true)}   】
 之后51test给出的解决参考：https://c.m.163.com/news/a/DEFA4S5K0511G03U.html?spss=newsapp&spsw=1
 【BeanShellPreProcessor】和 beanshellpostprocessor的不同点：
 
-![图一][https//wx2.sinaimg.cn/thumb150/b278a87fgy1fqhqr4tgecj20u80e0taf.jpg]
+![图一](https//wx2.sinaimg.cn/thumb150/b278a87fgy1fqhqr4tgecj20u80e0taf.jpg)
 
-![图二][https//wx4.sinaimg.cn/thumb150/b278a87fgy1fqhqr4j1mwj20rz0edgly.jpg]
+![图二](https//wx4.sinaimg.cn/thumb150/b278a87fgy1fqhqr4j1mwj20rz0edgly.jpg)
 
-![s][https://wx2.sinaimg.cn/orj360/b278a87fly1fqc5a3qy49j20xc1n9402.jpg]
+
