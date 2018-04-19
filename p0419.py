@@ -17,12 +17,5 @@ if __name__=='__main__':
     #使用get取值保证不会错
     html=html.decode(cs.get("encoding","utf-8"))
     print(html)
-    # url='http://https://jingyan.baidu.com/'
-    # rsp=urllib.request.urlopen(url)
-    # print(type(rsp))
-    # print(rsp)
-    # print("url:{0}".format(rsp.geturl()))
-    # print("info:{0}".format(rsp.info()))
-    # print("code:{0}".format(rsp.getcode()))
-    # html=rsp.read()
+
 
