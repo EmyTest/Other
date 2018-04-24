@@ -61,4 +61,20 @@ SSL
   -SSL证书就是指遵守SSL安全套阶层协议的服务器数字证书{SercureSocketLayer}  
   -美国网景公司开发  
   -CA（ certificateauthority）数字证书认证中心，是发放，管理，废除数字证书的收信人的第三方机构   
- 
+  #利用非认证上下文环境替换认证的上下文环境  
+  ssl._create_default_https_context = ssl._create_unverified_context  
+
+
+
+
+
+
+
+js加密  
+  有的反爬虫策略采用js对需要的传输的数据进行加密处理（通常是取md5的值）  
+  经过加密 传输的是密文  但是   
+  加密函数或者过程一定是在测试浏览器完成，也就是一定会把代码（js代码）暴露给使用者  
+  通过阅读加密算法，就可以模拟出加密过程，从而达到解破  （案例v18 ）
+
+
+
