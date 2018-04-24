@@ -32,3 +32,27 @@ http模块包含一些关于cookie的模块，通过它们我们可以自动使�
     打开登录页，用户名密码登录   
     自动提取的cookie  
     利用提取的cookie登录隐私页面  
+
+handler 是handler的实例，常用参考代码实例  
+-用来处理复杂请求
+  #生成cookie管理器        
+  cookie_handler = request.HTTPCookieProcessor(cookie)          
+  #创建http请求管理器             
+  http_handler = request.HTTPHandler()          
+  #生成http管理器         
+  https_handler = request.HTTPHandler()      
+  
+  
+  创建handler后，使用openler打开，打开后相应的业务由相应的handler处理   
+  cookie作为一个变量，打印出来  
+      -cookie的属性：  
+        -name：名称  
+        -value：值  
+        -domain：可以访问此cookie的域名          
+        -path ：可以访问此cookie的页面路径      
+        -expires：过期时间       
+        -size：大小          
+        -http字段：   
+  
+  cookie的保存：FileCookieJar
+       
