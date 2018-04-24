@@ -56,3 +56,9 @@ handler 是handler的实例，常用参考代码实例  
   
   cookie的保存：FileCookieJar
        
+
+SSL   
+  -SSL证书就是指遵守SSL安全套阶层协议的服务器数字证书{SercureSocketLayer}  
+  -美国网景公司开发  
+  -CA（ certificateauthority）数字证书认证中心，是发放，管理，废除数字证书的收信人的第三方机构   
+ 
