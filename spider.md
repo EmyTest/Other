@@ -77,4 +77,5 @@ js加密  
   通过阅读加密算法，就可以模拟出加密过程，从而达到解破  （案例v18 ）
 
 
+r = "" + ((new Date).getTime() + parseInt(10 * Math.random(), 10)),
 
