@@ -203,3 +203,13 @@ https://testerhome.com/topics/9392
 
 
 3、测试的过程中不小心把csv数据文件设置   这个禁用了   
+
+
+
+
+
+
+
+json格式post请求：
+慕课：
+在传json参数的同时，添加“thhp信息头管理器”  内容：Contant-Type： application/json
