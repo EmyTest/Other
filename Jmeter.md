@@ -183,3 +183,22 @@ BeanShell PreProcessor
 
 详解JMeter函数和变量；函数助手对话框：  
    https://www.cnblogs.com/MasterMonkInTemple/p/3442770.html  
+
+
+
+
+
+关于post请求使用 csv data set config的方式 ，获取众多参数：
+问题及解决
+乱码（response body里面）
+
+三种方法：一、在Content encoding 写入utf-8二、在Jmeter\bin路径下用记事本打开jmeter.properties文件找到 #sampleresult.default.encoding=ISO-8859-1 在下一行添加这句话sampleresult.default.encoding=UTF-8三、线程组添加后置处理器在Script输入 pre.setDateEncofing("utf-8")
+
+
+2、
+https://testerhome.com/topics/9392
+
+不要用windows自带的notepad创建保存数据文件，用sublime text这类的编辑工具创建保存数据文件试下
+
+
+3、测试的过程中不小心把csv数据文件设置   这个禁用了   
